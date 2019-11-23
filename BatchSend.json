@@ -1,0 +1,17 @@
+[
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"internalType": "address payable[]",
+				"name": "_addresses",
+				"type": "address[]"
+			}
+		],
+		"name": "sendBatch",
+		"outputs": [],
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "function"
+	}
+]

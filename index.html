@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- JQuery 3.4.1 slim minified -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    crossorigin="anonymous"></script>
+
+  <!-- Compiled and minified Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- FontAwesome icons -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+
+  <!-- Compiled and minified JavaScript for Materialize CSS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body class="grey lighten-3">
+<div class="container">
+  <h4>Batch ETH Transaction Sender</h4>
+  <p>Enter a comma separated list of addresses in the first field,
+    and the amount of Ether to split between these addresses.
+    Requires <a href="https://metamask.io">MetaMask</a>.</p>
+    <div class="row">
+      <div class="col s12">
+        <input id="addresses" ref="addresses" class="input-field" placeholder="Enter comma separated address here..." />
+        <label for="addresses">Comma Separated Addresses</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <input id="value" ref="value" type=number class="input-field" placeholder="Total Value (in ETH)" />
+        <label for="value">Total Value (in ETH)</label>
+      </div>
+    </div>
+
+    <div class="col s4">
+      <a class="blue-grey lighten-1 btn input-field" onclick="window.dApp.send();">Send Ether</a>
+    </div>
+  </div>
+</div>
+  <script src="dapp.js"></script>
+</body>
+</html>
